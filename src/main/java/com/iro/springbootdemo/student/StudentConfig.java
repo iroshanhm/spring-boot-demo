@@ -15,8 +15,8 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentRepository studentRepository){
         return args -> {
             List<Student> returnList = new ArrayList<>();
-            returnList.add(new Student("Iroshan", "iroshan@gmail.com", LocalDate.of(1984, Month.OCTOBER, 30), 38));
-            returnList.add(new Student("Parasanna", "iroshan2@gmail.com", LocalDate.of(1985, Month.OCTOBER, 30), 37));
+            returnList.add(new Student("Iroshan", "iroshan@gmail.com", LocalDate.of(1984, Month.OCTOBER, 30)));
+            returnList.add(new Student("Parasanna", "iroshan2@gmail.com", LocalDate.of(1986, Month.OCTOBER, 30)));
             studentRepository.saveAll(returnList);
         };
     }
